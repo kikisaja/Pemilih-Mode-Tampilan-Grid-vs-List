@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid/List View Switcher 🔲📄</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-card">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-top">
+                <span class="badge">Grid vs List </span>
+                <h1>🛒 TECH GADGET STORE</h1>
+                <p>Ubah tata letak galeri produk antara kartu (Grid) atau daftar (List)!</p>
+            </div>
+
+            <!-- Tombol Switcher Mode -->
+            <div class="view-switcher-bar">
+                <span class="switcher-label">Mode Tampilan:</span>
+                <div class="btn-group">
+                    <button id="btn-grid" class="btn-switch active">
+                        🔲 Grid View
+                    </button>
+                    <button id="btn-list" class="btn-switch">
+                        📄 List View
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Container Produk (Default: grid-view) -->
+        <main id="products-container" class="products-container grid-view">
+            
+            <!-- Item 1 -->
+            <article class="product-card">
+                <div class="product-badge bg-pink">POPULER</div>
+                <div class="product-icon">🎧</div>
+                <div class="product-info">
+                    <h3>Headphone Wireless PRO</h3>
+                    <p class="description">Suara jernih dengan fitur noise canceling terbaik untuk mendengarkan musik seharian.</p>
+                    <div class="product-bottom">
+                        <span class="price">Rp 750.000</span>
+                        <button class="btn-buy">Beli 🛒</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Item 2 -->
+            <article class="product-card">
+                <div class="product-badge bg-yellow">DISKON</div>
+                <div class="product-icon">⌚</div>
+                <div class="product-info">
+                    <h3>Smartwatch Sport RGB</h3>
+                    <p class="description">Lacak detak jantung, langkah kaki, dan notifikasi smartphone dengan gaya trendi.</p>
+                    <div class="product-bottom">
+                        <span class="price">Rp 450.000</span>
+                        <button class="btn-buy">Beli 🛒</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Item 3 -->
+            <article class="product-card">
+                <div class="product-badge bg-green">BARU</div>
+                <div class="product-icon">⌨️</div>
+                <div class="product-info">
+                    <h3>Mechanical Keyboard 60%</h3>
+                    <p class="description">Switch kustom dengan lampu RGB warna-warni, mengetik jadi lebih memuaskan.</p>
+                    <div class="product-bottom">
+                        <span class="price">Rp 890.000</span>
+                        <button class="btn-buy">Beli 🛒</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Item 4 -->
+            <article class="product-card">
+                <div class="product-badge bg-purple">HOT</div>
+                <div class="product-icon">🖱️</div>
+                <div class="product-info">
+                    <h3>Wireless Gaming Mouse</h3>
+                    <p class="description">Sensor presisi tinggi dengan bobot ringan dan baterai tahan hingga 70 jam.</p>
+                    <div class="product-bottom">
+                        <span class="price">Rp 320.000</span>
+                        <button class="btn-buy">Beli 🛒</button>
+                    </div>
+                </div>
+            </article>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
